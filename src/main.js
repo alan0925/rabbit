@@ -12,3 +12,8 @@ app.use(createPinia())
 app.use(router)
 
 app.mount('#app')
+
+import { getCategory } from './apis/testApi'
+getCategory().then(res=>{
+  console.log(res);
+})
